@@ -10,10 +10,11 @@ import numpy as np
 import matplotlib.dates as md
 import geopandas as gpd
 import json
-from bokeh.io import output_notebook, show, output_file
+from bokeh.io import output_notebook, show
 from bokeh.plotting import figure
 from bokeh.models import GeoJSONDataSource, LinearColorMapper, ColorBar
 from bokeh.palettes import brewer
+import selenium
 
 ```
 
@@ -259,37 +260,15 @@ p.add_layout(color_bar, 'below')
 output_notebook()
 
 show(p)
+
 ```
 
-
-
-<div class="bk-root">
-    <a href="https://bokeh.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-    <span id="1042">Loading BokehJS ...</span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="bk-root" id="15e22771-36e9-4b85-891b-5c6db6ff1872" data-root-id="1004"></div>
-
-
-
-
+![png](map.png)
 
 
 ```python
 by_Zip
 ```
-
-
 
 
 <div>
